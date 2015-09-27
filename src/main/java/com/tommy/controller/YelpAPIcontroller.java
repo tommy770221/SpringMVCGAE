@@ -12,27 +12,13 @@ import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
-import com.google.appengine.api.xmpp.JID;
-import com.google.appengine.api.xmpp.Message;
-import com.google.appengine.api.xmpp.MessageBuilder;
-import com.google.appengine.api.xmpp.MessageType;
-import com.google.appengine.api.xmpp.XMPPService;
-import com.google.appengine.api.xmpp.XMPPServiceFactory;
-import com.tommy.entity.Question;
 
-import java.io.IOException;
-import java.util.Date;
-
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 @Controller
-public class TestController {
+@RequestMapping(value="/yelp" )
+public class YelpAPIcontroller {
 
-
-
-	@RequestMapping(value="/hello" ,method = RequestMethod.GET, produces = "text/plain; charset=utf-8")
+	@RequestMapping(value="/hello" ,method = {RequestMethod.GET,RequestMethod.POST}, produces = "text/plain; charset=utf-8")
 	@ResponseBody
 	public String userProfile(HttpServletRequest request){
 		
@@ -47,7 +33,4 @@ public class TestController {
 	    
 	    return "hello";
 	}
-	
-
-
 }

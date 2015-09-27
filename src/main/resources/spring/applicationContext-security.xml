@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" 
+    xmlns:beans="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+    <!-- HTTP security configurations -->
+    <!-- token 驗證 -->
+	<http pattern="/oauth/token" create-session="stateless"
+		authentication-manager-ref="clientAuthenticationManager"
+		use-expressions="true" entry-point-ref="clientAuthenticationEntryPoint">
+
+		<anonymous enabled="false" />
+		<intercept-url pattern="/oauth/token" access="hasRole('ROLE_CLIENT')" />
+
+		<custom-filter ref="clientCredentialsTokenEndpointFilter"
+			after="BASIC_AUTH_FILTER" />
+		<access-denied-handler ref="oauthAccessDeniedHandler" />
+		<expression-handler ref="oauthWebExpressionHandler" />
+	</http>
+
+	<!-- 讓/oauth/authorize一定要先讓使用者認證過 -->
+	<http pattern="/oauth/authorize" use-expressions="true" auto-config="true">
+		<form-login login-processing-url="/resources/j_spring_security_check"
+			login-page="/login" authentication-failure-url="/login?login_error=t" />
+		<logout logout-url="/resources/j_spring_security_logout" />
+		<intercept-url pattern="/oauth/authorize" access="hasRole('ROLE_USER')" />
+	</http> 
+
+	<!-- OAuth認證的EndpointFilter 它的認證來源是clientAuthenticationManager -->
+	<beans:bean id="clientCredentialsTokenEndpointFilter"   	
+		class="org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter">	
+		<beans:property name="authenticationManager" ref="clientAuthenticationManager" />
+	</beans:bean>
+     
+    <http pattern="/v1.0/**" create-session="never"
+		authentication-manager-ref="clientAuthenticationManager"
+		use-expressions="true" entry-point-ref="clientAuthenticationEntryPoint">
+	
+		<anonymous enabled="false" />
+		<intercept-url pattern="/v1.0/**"
+			access="#oauth2.clientHasRole('ROLE_CLIENT') and (hasRole('ROLE_USER'))" />
+	
+		<custom-filter ref="resourceServerFilter" before="PRE_AUTH_FILTER" />
+		<access-denied-handler ref="oauthAccessDeniedHandler" />
+		<expression-handler ref="oauthWebExpressionHandler" />
+	</http>
+	
+	<http pattern="/rest/**" create-session="never"
+		authentication-manager-ref="clientAuthenticationManager"
+		use-expressions="true" entry-point-ref="clientAuthenticationEntryPoint">
+	
+		<anonymous enabled="false" />
+		<intercept-url pattern="/rest/**"
+			access="#oauth2.clientHasRole('ROLE_CLIENT') and (hasRole('ROLE_USER'))" />
+	
+		<custom-filter ref="resourceServerFilter" before="PRE_AUTH_FILTER" />
+		<access-denied-handler ref="oauthAccessDeniedHandler" />
+		<expression-handler ref="oauthWebExpressionHandler" />
+	</http>
+    
+    <http auto-config="true" use-expressions="true">
+        <custom-filter before="FORM_LOGIN_FILTER" ref="customFilters" /> 
+        <form-login login-processing-url="/resources/j_spring_security_check" 
+        	login-page="/login"
+        	authentication-success-handler-ref="loginSuccessHandler" 
+        	authentication-failure-url="/login?login_error=t" />
+        <logout logout-url="/resources/j_spring_security_logout" />
+        <!-- Configure these elements to secure URIs in your application -->
+        <intercept-url pattern="/resources/**" access="permitAll" />
+        <intercept-url pattern="/styles/**" access="permitAll" />
+        <intercept-url pattern="/plugins/**" access="permitAll" />
+        <intercept-url pattern="/js/**" access="permitAll" />
+        <intercept-url pattern="/login/**" access="permitAll" />
+        <intercept-url pattern="/users" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/users/" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/users/signup" access="permitAll" />
+        <intercept-url pattern="/users/signupForm" access="permitAll" />
+        <intercept-url pattern="/users/activation" access="permitAll" />
+        <intercept-url pattern="/users/accountActived" access="permitAll" />
+        <intercept-url pattern="/register/**" access="permitAll" />
+        <intercept-url pattern="/users/active/*" access="permitAll" />
+        <intercept-url pattern="/users/userQRCode/*" access="permitAll" />
+        <intercept-url pattern="/users/headshot/*" access="permitAll" />
+        <intercept-url pattern="/users/*" access="permitAll" />
+        <intercept-url pattern="/img/*" access="permitAll" />
+        <intercept-url pattern="/fonts/*" access="permitAll" />
+        <intercept-url pattern="/link/**" access="hasRole('ROLE_USER')" />
+        <intercept-url pattern="/users/**" access="hasRole('ROLE_USER')" />
+        <intercept-url pattern="/clients/**" access="hasRole('ROLE_USER')" />   
+        <intercept-url pattern="/v0.1/**" access="hasRole('ROLE_USER')" />    
+        <intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
+    </http>
+    <!-- Configure Authentication mechanism -->
+    <authentication-manager alias="authenticationManager">
+         <authentication-provider ref="platformDaoAuthenticationProvider"/>	
+		 <authentication-provider ref="facebookAuthenticationProvider"/>	
+		 <authentication-provider ref="jrsysCertAuthenticationProvider"/>	 
+    </authentication-manager>
+    <!-- self define provider -->
+    <beans:bean id="platformDaoAuthenticationProvider" class="com.jrsys.mtrust.auth.PlatformDaoAuthenticationProvider">
+          <beans:property name="userDetailsService" ref="platformUserService"/>
+          <beans:property name="passwordEncoder" ref="platformPasswordEncoder"/>
+          <beans:property name="saltSource" ref="platformSaltSource"/>
+    </beans:bean>
+
+    <beans:bean id="platformUserService" class="com.jrsys.mtrust.auth.PlatformUserDetailsService"/>
+    <beans:bean id="platformPasswordEncoder" class="com.jrsys.mtrust.auth.PlatformPasswordEncoder"/>
+    <beans:bean id="platformSaltSource" class="com.jrsys.mtrust.auth.PlatformUserSaltSource"/>
+    
+    <!-- Facebook Login -->
+    <beans:bean id="facebookAuthenticationProcessingFilter" class="com.jrsys.mtrust.auth.FacebookAuthenticationProcessingFilter">
+    	<beans:constructor-arg value="/resources/j_spring security_check"/>
+    	<beans:property name="authenticationManager" ref="authenticationManager"/>
+    	<beans:property name="successHandler" ref="loginSuccessHandler"/>
+    </beans:bean>
+    
+    <beans:bean id="facebookAuthenticationProvider" class="com.jrsys.mtrust.auth.FacebookAuthenticationProvider"/>
+    
+    <!-- JRSYS Cert Login -->
+    <beans:bean id="jrsysCertAuthenticationProcessingFilter" class="com.jrsys.mtrust.auth.JRSYSCertAuthenticationProcessingFilter">
+    	<beans:constructor-arg value="/resources/j_spring security_check"/>
+    	<beans:property name="authenticationManager" ref="authenticationManager"/>
+    	<beans:property name="successHandler" ref="loginSuccessHandler"/>
+    </beans:bean>
+    
+    <beans:bean id="jrsysCertAuthenticationProvider" class="com.jrsys.mtrust.auth.JRSYSCertAuthenticationProvider"/>
+    
+    <beans:bean id="loginSuccessHandler" class="com.jrsys.mtrust.auth.LoginSuccessHandler">
+    	<beans:property name="defaultTargetUrl" value="/my"/>
+    	<beans:property name="alwaysUseDefaultTargetUrl" value="false"/>
+	</beans:bean>
+	
+	
+	<!-- customFilters Order  -->
+	<beans:bean id="customFilters" class="org.springframework.web.filter.CompositeFilter">
+    <beans:property name="filters">
+        <beans:list>
+            <beans:ref bean="facebookAuthenticationProcessingFilter"/>
+            <beans:ref bean="jrsysCertAuthenticationProcessingFilter"/>
+        </beans:list>
+    </beans:property>
+   </beans:bean>
+</beans:beans>
