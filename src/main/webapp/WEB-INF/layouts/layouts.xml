@@ -16,29 +16,19 @@
     <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
   </definition>
 
-  <definition name="index" extends="default">
-    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+  <definition name="singlePageDefault" template="/WEB-INF/layouts/login_default.jsp">
   </definition>
   
-  <definition name="login_default" template="/WEB-INF/layouts/login_default.jsp">
-  </definition>  
-  
-  <definition name="signup_default" template="/WEB-INF/layouts/signup_default.jsp">
-  </definition>  
-
-<definition name="oauth2login" extends="login_default">
-    <put-attribute name="body" value="/WEB-INF/views/oauth/oauth2login.jsp" />
-  </definition>
-  <definition name="adminlte" template="/WEB-INF/adminlte/layout.jsp">
-    <put-attribute name="header" value="/WEB-INF/adminlte/header.jsp" />
-    <put-attribute name="sidebar" value="/WEB-INF/adminlte/sidebar.jsp" />
-    <put-attribute name="footer" value="/WEB-INF/adminlte/footer.jsp" />
-  </definition>
-  
-  <definition name="namecard" template="/WEB-INF/namecard/layout.jsp">
-    <put-attribute name="header" value="/WEB-INF/namecard/header.jsp" />
-    <put-attribute name="sidebar" value="/WEB-INF/namecard/sidebar.jsp" />
-    <put-attribute name="footer" value="/WEB-INF/namecard/footer.jsp" />
-  </definition>
+  <definition name="adminlte"      template="/WEB-INF/layouts/adminLTELayout/adminLTELayout.jsp">
+		<put-attribute name="header"  value="/WEB-INF/layouts/adminLTELayout/header.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/layouts/adminLTELayout/sidebar.jsp" />
+	    <put-attribute name="controllsidebar" value="/WEB-INF/layouts/adminLTELayout/controllsidebar.jsp" />
+		<put-attribute name="footer"  value="/WEB-INF/layouts/adminLTELayout/footer.jsp" />
+	</definition>
+	<definition name="selfAside"   template="/WEB-INF/layouts/selfAsideLayout/adminLTELayout.jsp">
+	    <put-attribute name="header"  value="/WEB-INF/layouts/selfAsideLayout/header.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/layouts/selfAsideLayout/sidebarLayout.jsp" />
+	    <put-attribute name="footer"  value="/WEB-INF/layouts/selfAsideLayout/footer.jsp" />
+	</definition>
 
 </tiles-definitions>

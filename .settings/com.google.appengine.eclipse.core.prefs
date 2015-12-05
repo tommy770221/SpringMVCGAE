@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+gaeDatanucleusVersion=v2
+gaeHrdEnabled=true
+googleCloudSqlEnabled=false
+localDevMySqlEnabled=true
+mySqlDatabaseName=gae
+mySqlDatabasePassword=root
+mySqlDatabaseUser=root
+mySqlHostName=localhost
+mySqlIsConfigured=true
+mySqlJdbcJar=D\:\\Dropbox\\Java\\ssh\u67B6\u69CBjava\\MySql\\mysql-connector-java-5.1.23-bin.jar
+mySqlPort=3306

@@ -1,0 +1,657 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Palaemon 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Palaemon ---
+[INFO] Deleting I:\workspacePlatForm\Palaemon2\target
+[INFO] 
+[INFO] >>> appengine-maven-plugin:1.9.18:devserver (default-cli) > package @ Palaemon >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Palaemon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Palaemon ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to I:\workspacePlatForm\Palaemon2\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Palaemon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory I:\workspacePlatForm\Palaemon2\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Palaemon ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Palaemon ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.4:war (default-war) @ Palaemon ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [Palaemon] in [I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [I:\workspacePlatForm\Palaemon2/src/main/webapp/WEB-INF] to [I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT]
+[INFO] Copying webapp resources [I:\workspacePlatForm\Palaemon2\src\main\webapp]
+[INFO] Building jar: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\Palaemon-0.0.1-SNAPSHOT.jar
+[INFO] Webapp assembled in [170 msecs]
+[INFO] Building war: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT.war
+[INFO] 
+[INFO] <<< appengine-maven-plugin:1.9.18:devserver (default-cli) < package @ Palaemon <<<
+[INFO] 
+[INFO] --- appengine-maven-plugin:1.9.18:devserver (default-cli) @ Palaemon ---
+[INFO] 
+[INFO] Google App Engine Java SDK - Running Development Server
+[INFO] 
+[INFO] Retrieving Google App Engine Java SDK from Maven
+[INFO] Running C:\Java\jdk1.7.0_67\jre\bin\java -javaagent:C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\agent\appengine-agent.jar -Xbootclasspath/p:C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\override\appengine-dev-jdk-overrides.jar -Dappengine.fullscan.seconds=5 -classpath C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\appengine-tools-api.jar com.google.appengine.tools.development.DevAppServerMain --allow_remote_shutdown -p 9090 I:\workspacePlatForm\Palaemon2\target/Palaemon-0.0.1-SNAPSHOT
+[INFO] 九月 28, 2015 12:15:47 上午 com.google.apphosting.utils.config.AppEngineWebXmlReader readAppEngineWebXml
+[INFO] 資訊: Successfully processed I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF/appengine-web.xml
+[INFO] 九月 28, 2015 12:15:47 上午 com.google.apphosting.utils.config.AbstractConfigXmlReader readConfigXml
+[INFO] 資訊: Successfully processed I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF/web.xml
+[INFO] 九月 28, 2015 12:15:47 上午 com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+[INFO] 資訊: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\appengine-web.xml'
+[INFO] 九月 28, 2015 12:15:47 上午 com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] 資訊: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
+[INFO] 九月 28, 2015 12:15:47 上午 com.google.appengine.tools.development.AbstractBackendServers configureAll
+[INFO] 詳細: Got null backendsXml config.
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: Checking Resource aliases
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] 資訊: jetty-6.1.x
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started org.mortbay.thread.QueuedThreadPool@657fa883
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/appengine-api-1.0-sdk-1.9.18.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/impl/agent/appengine-agentruntime.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/asm-4.0.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.8.0.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-codec-1.5.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-digester-2.0.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.2.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-io-1.4.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.1.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-appengine-2.1.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-core-3.1.3.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-enhancer-3.1.1.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-4.2.1.Final.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-4.2.1.Final.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.15.0-GA.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.1.0.GA.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.5.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jdo-api-3.0.1.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/c.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/fn.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/permittedTaglibs.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/scriptfree.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar!/META-INF/x.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jta-1.1.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.0.13.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.0.13.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/ognl-3.0.8.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/Palaemon-0.0.1-SNAPSHOT.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.5.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.5.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-acl-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-config-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-core-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-oauth2-2.0.6.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-3.2.8.RELEASE.jar!/META-INF/security.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-web-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.4.RELEASE.jar!/META-INF/spring.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.4.RELEASE.jar!/META-INF/spring-form.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-2.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-spring4-2.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-api-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-core-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-jsp-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-jsp-2.2.2.jar!/META-INF/tld/tiles-jsp.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-servlet-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-template-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/unbescape-1.1.0.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/validation-api-1.0.0.GA.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-jstl-1.1.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/x.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/x-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/x-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/sql.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/sql-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/sql-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/scriptfree.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/permittedTaglibs.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/fn.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/fmt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/fmt-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/fmt-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/c.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/c-1_0.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD found jar:file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar!/META-INF/c-1_0-rt.tld
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jasper-jdt-6.0.29.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: TLD search of file:/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/opt/tools/appengine-local-endpoints/v1/appengine-local-endpoints.jar
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: Init SecureRandom.
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started org.mortbay.jetty.servlet.HashSessionIdManager@244ff48e
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started com.google.apphosting.utils.jetty.StubSessionManager@7d40a941
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting ServletHandler@202b9f72
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started ServletHandler@202b9f72
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting SecurityHandler@ff105de
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started SecurityHandler@ff105de
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting SessionHandler@18b839ff
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started SessionHandler@18b839ff
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting com.google.appengine.tools.development.DevAppEngineWebAppContext@66e7a106{/,I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT}
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting ErrorPageErrorHandler@70fcc5b1
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started ErrorPageErrorHandler@70fcc5b1
+[INFO] SLF4J: Class path contains multiple SLF4J bindings.
+[INFO] SLF4J: Found binding in [jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[INFO] SLF4J: Found binding in [jar:file:/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[INFO] SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+[INFO] Failed to instantiate [ch.qos.logback.classic.LoggerContext]
+[INFO] Reported exception:
+[INFO] java.lang.NoClassDefFoundError: java.util.logging.LogManager is a restricted class. Please see the Google  App Engine developer's guide for more details.
+[INFO] 	at com.google.appengine.tools.development.agent.runtime.Runtime.reject(Runtime.java:52)
+[INFO] 	at ch.qos.logback.classic.jul.LevelChangePropagator.resetJULLevels(LevelChangePropagator.java:71)
+[INFO] 	at ch.qos.logback.classic.jul.LevelChangePropagator.start(LevelChangePropagator.java:96)
+[INFO] 	at ch.qos.logback.classic.joran.action.LoggerContextListenerAction.end(LoggerContextListenerAction.java:74)
+[INFO] 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:317)
+[INFO] 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:196)
+[INFO] 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:182)
+[INFO] 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
+[INFO] 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:149)
+[INFO] 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:135)
+[INFO] 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:99)
+[INFO] 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:49)
+[INFO] 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:75)
+[INFO] 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:148)
+[INFO] 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:85)
+[INFO] 	at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:55)
+[INFO] 	at java.lang.Class.forName0(Native Method)
+[INFO] 	at java.lang.Class.forName(Class.java:190)
+[INFO] 	at com.google.appengine.tools.development.agent.runtime.RuntimeHelper.checkRestricted(RuntimeHelper.java:70)
+[INFO] 	at com.google.appengine.tools.development.agent.runtime.Runtime.checkRestricted(Runtime.java:65)
+[INFO] 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:128)
+[INFO] 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:107)
+[INFO] 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:295)
+[INFO] 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:269)
+[INFO] 	at org.apache.commons.logging.impl.SLF4JLogFactory.getInstance(SLF4JLogFactory.java:156)
+[INFO] 	at org.apache.commons.logging.impl.SLF4JLogFactory.getInstance(SLF4JLogFactory.java:132)
+[INFO] 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
+[INFO] 	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:282)
+[INFO] 	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+[INFO] 	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:548)
+[INFO] 	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+[INFO] 	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+[INFO] 	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:517)
+[INFO] 	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:467)
+[INFO] 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+[INFO] 	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+[INFO] 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+[INFO] 	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+[INFO] 	at org.mortbay.jetty.Server.doStart(Server.java:224)
+[INFO] 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+[INFO] 	at com.google.appengine.tools.development.JettyContainerService.startContainer(JettyContainerService.java:255)
+[INFO] 	at com.google.appengine.tools.development.AbstractContainerService.startup(AbstractContainerService.java:288)
+[INFO] 	at com.google.appengine.tools.development.AutomaticInstanceHolder.startUp(AutomaticInstanceHolder.java:26)
+[INFO] 	at com.google.appengine.tools.development.AbstractModule.startup(AbstractModule.java:87)
+[INFO] 	at com.google.appengine.tools.development.Modules.startup(Modules.java:105)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerImpl.doStart(DevAppServerImpl.java:258)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerImpl.access$000(DevAppServerImpl.java:47)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:213)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:211)
+[INFO] 	at java.security.AccessController.doPrivileged(Native Method)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerImpl.start(DevAppServerImpl.java:211)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerMain$StartAction.apply(DevAppServerMain.java:277)
+[INFO] 	at com.google.appengine.tools.util.Parser$ParseResult.applyArgs(Parser.java:48)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerMain.run(DevAppServerMain.java:219)
+[INFO] 	at com.google.appengine.tools.development.DevAppServerMain.main(DevAppServerMain.java:210)
+[INFO] SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[INFO] 九月 28, 2015 12:15:48 上午 com.google.appengine.tools.development.ApiProxyLocalImpl log
+[INFO] 資訊: javax.servlet.ServletContext log: Initializing Spring root WebApplicationContext
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_DevAppServerModulesFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_StaticFileFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_AbandonedTransactionDetector
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_ServeBlobFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_HeaderVerificationFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_DevSocketFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_ResponseRewriterFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started CharacterEncodingFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started HttpMethodFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started Spring OpenEntityManagerInViewFilter
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_restApi
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_rpcApi
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_apiStatic
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_blobUpload
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_channelLocalChannel
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_channelServeScript
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_blobImage
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_login
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_logout
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_oauthGetAccessToken
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_oauthAuthorizeToken
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_oauthGetRequestToken
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started com.google.appengine.tools.development.JettyContainerService$ServerShutdownServlet-1759385261
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_default
+[INFO] 九月 28, 2015 12:15:49 上午 org.apache.jasper.compiler.JspRuntimeContext <init>
+[INFO] 詳細: Parent class loader is: com.google.appengine.tools.development.IsolatedAppClassLoader@3b49e8c2
+[INFO] 九月 28, 2015 12:15:49 上午 org.apache.jasper.compiler.JspRuntimeContext initClassPath
+[INFO] 詳細: Compilation classpath initialized: /I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/classes/;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/appengine-api-1.0-sdk-1.9.18.jar;/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/impl/agent/appengine-agentruntime.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/asm-4.0.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.8.0.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-codec-1.5.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-digester-2.0.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.2.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-io-1.4.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.1.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-appengine-2.1.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-core-3.1.3.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/datanucleus-enhancer-3.1.1.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-4.2.1.Final.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-4.2.1.Final.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.15.0-GA.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.1.0.GA.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.5.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jdo-api-3.0.1.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/jta-1.1.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.0.13.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.0.13.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/ognl-3.0.8.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/Palaemon-0.0.1-SNAPSHOT.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.5.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.5.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-acl-3.2.8.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-config-3.2.8.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-core-3.2.8.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-oauth2-2.0.6.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-3.2.8.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-web-3.2.8.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-2.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-spring4-2.1.4.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-api-2.2.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-core-2.2.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-jsp-2.2.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-servlet-2.2.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/tiles-template-2.2.2.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/unbescape-1.1.0.RELEASE.jar;/I:/workspacePlatForm/Palaemon2/target/Palaemon-0.0.1-SNAPSHOT/WEB-INF/lib/validation-api-1.0.0.GA.jar;/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-jstl-1.1.2.jar;/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar;/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/tools/jsp/repackaged-appengine-jasper-jdt-6.0.29.jar;/C:/Users/Tommy/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.18/appengine-java-sdk/appengine-java-sdk-1.9.18/lib/opt/tools/appengine-local-endpoints/v1/appengine-local-endpoints.jar;C:\Users\Tommy\AppData\Local\Temp\Jetty_127_0_0_1_9090_Palaemon.0.0.1.SNAPSHOT____8p2g0u\jsp;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\appengine-local-runtime-shared.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\el-api.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\jsp\repackaged-appengine-ant-1.7.1.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\jsp\repackaged-appengine-ant-launcher-1.7.1.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\jsp\repackaged-appengine-jasper-6.0.29.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\jsp\repackaged-appengine-jasper-el-6.0.29.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\jsp\repackaged-appengine-tomcat-juli-6.0.29.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\jsp-api.jar;C:\Users\Tommy\.m2\repository\com\google\appengine\appengine-java-sdk\1.9.18\appengine-java-sdk\appengine-java-sdk-1.9.18\lib\shared\servlet-api.jar;I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\classes;
+[INFO] 九月 28, 2015 12:15:49 上午 org.apache.jasper.servlet.JspServlet init
+[INFO] 詳細: Scratch dir for the JSP engine is: C:\Users\Tommy\AppData\Local\Temp\Jetty_127_0_0_1_9090_Palaemon.0.0.1.SNAPSHOT____8p2g0u\jsp
+[INFO] 九月 28, 2015 12:15:49 上午 org.apache.jasper.servlet.JspServlet init
+[INFO] 詳細: IMPORTANT: Do not modify the generated servlets
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_jsp
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_resources
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_capabilitiesViewer
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_datastoreViewer
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_queue_deferred
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_inboundMail
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_modules
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_search
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_sessioncleanup
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_taskqueueViewer
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_xmpp
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_adminConsole
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_capabilitiesStatusBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_capabilitiesStatusFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_capabilitiesStatusHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_datastoreViewerBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_datastoreViewerFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_datastoreViewerHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_entityDetailsBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_entityDetailsFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_entityDetailsHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_inboundMailBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_inboundMailFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_inboundMailHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_indexDetailsBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_indexDetailsFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_indexDetailsHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_modulesBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_modulesFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_modulesHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchDocumentBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchDocumentFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchDocumentHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchIndexBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchIndexFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchIndexHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchIndexesListBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchIndexesListFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_searchIndexesListHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_taskqueueViewerBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_taskqueueViewerFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_taskqueueViewerHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_xmppBody
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_xmppFinal
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started _ah_xmppHead
+[INFO] 九月 28, 2015 12:15:49 上午 com.google.appengine.tools.development.ApiProxyLocalImpl log
+[INFO] 資訊: javax.servlet.ServletContext log: Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started dispatcherServlet
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started com.google.appengine.tools.development.DevAppEngineWebAppContext@66e7a106{/,I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT}
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting JettyContainerService$ApiProxyHandler@7e0f7fbe
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started JettyContainerService$ApiProxyHandler@7e0f7fbe
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: starting Server@2b8bd39a
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started org.mortbay.jetty.nio.SelectChannelConnector$1@4d16ad08
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] 資訊: Started SelectChannelConnector@127.0.0.1:9090
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started SelectChannelConnector@127.0.0.1:9090
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: started Server@2b8bd39a
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.appengine.tools.development.JettyContainerService startHotDeployScanner
+[INFO] 資訊: Full scan of the web app in place every 5s.
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jackson-core-asl-1.9.13.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-jdbc-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\slf4j-log4j12-1.7.5.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-security-web-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\slf4j-api-1.7.5.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-security-config-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\web.xml
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\hibernate-core-4.2.1.Final.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-lang3-3.1.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\appengine-api-1.0-sdk-1.9.18.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-security-oauth2-2.0.6.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\datanucleus-enhancer-3.1.1.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\Palaemon-0.0.1-SNAPSHOT.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\hibernate-commons-annotations-4.0.1.Final.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jboss-transaction-api_1.1_spec-1.0.1.Final.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\appengine-web.xml
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\asm-4.0.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jboss-logging-3.1.0.GA.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\log4j-1.2.17.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-beans-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-beanutils-1.8.0.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\datanucleus-core-3.1.3.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-security-core-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jackson-mapper-asl-1.9.13.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-codec-1.5.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\aopalliance-1.0.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-security-taglibs-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\hibernate-entitymanager-4.2.1.Final.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jta-1.1.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jdo-api-3.0.1.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\antlr-2.7.7.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\logback-core-1.0.13.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\ognl-3.0.8.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\unbescape-1.1.0.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\thymeleaf-spring4-2.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\validation-api-1.0.0.GA.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-web-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jcl-over-slf4j-1.7.5.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-aop-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\tiles-template-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\tiles-core-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\javassist-3.15.0-GA.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-fileupload-1.2.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\thymeleaf-2.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-io-1.4.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-expression-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-digester-2.0.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-security-acl-3.2.8.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\tiles-api-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-webmvc-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\tiles-jsp-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-tx-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\tiles-servlet-2.2.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\logback-classic-1.0.13.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-context-support-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\datanucleus-appengine-2.1.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\jstl-1.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\datanucleus-api-jdo-3.1.3.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-context-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\dom4j-1.6.1.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-core-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\commons-logging-1.2.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.apphosting.utils.jetty.JettyLogger debug
+[INFO] 詳細: File added: I:\workspacePlatForm\Palaemon2\target\Palaemon-0.0.1-SNAPSHOT\WEB-INF\lib\spring-orm-4.1.4.RELEASE.jar
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.appengine.tools.development.AbstractModule startup
+[INFO] 資訊: Module instance default is running at http://localhost:9090/
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.appengine.tools.development.AbstractModule startup
+[INFO] 資訊: The admin console is running at http://localhost:9090/_ah/admin
+[INFO] 九月 28, 2015 12:15:50 上午 com.google.appengine.tools.development.DevAppServerImpl doStart
+[INFO] 資訊: Dev App Server is now running
+要終止批次工作嗎 (Y/N)? 
