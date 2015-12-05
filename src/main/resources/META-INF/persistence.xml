@@ -6,10 +6,11 @@
 
     <persistence-unit name="transactions-optional">
         <provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider>
+        <class>com.tommy.entity.User</class>
         <properties>
-            <property name="datanucleus.NontransactionalRead" value="true"/>
-            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.appengine.datastoreEnableXGTransactions" value="true" />
             <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="datanucleus.appengine.ignorableMetaDataBehavior" value="NONE" />
         </properties>
     </persistence-unit>
 </persistence>
