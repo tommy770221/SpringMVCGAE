@@ -19,8 +19,9 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+	private String id;
 	private String username;
 	private String password;
 	private String email;
@@ -39,7 +40,7 @@ public class User {
 	public User() {
 	}
 
-	public User( Long id, String username, String password, String email,
+	public User( String id, String username, String password, String email,
 			String sex, String userId, String address, Integer post_no,
 			Integer age, Boolean enabled, Date birthday,
 			Date createDate, Date updateDate) {
@@ -59,11 +60,11 @@ public class User {
 		this.updateDate = updateDate;
 	}
 
-	public  Long getId() {
+	public  String getId() {
 		return id;
 	}
 
-	public void setId( Long id) {
+	public void setId( String id) {
 		this.id = id;
 	}
 

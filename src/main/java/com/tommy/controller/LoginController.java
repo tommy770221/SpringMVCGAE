@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.tommy.entity.User;
 import com.tommy.entity.repository.UserRepository;
@@ -24,7 +25,8 @@ public class LoginController {
 			HttpServletResponse httpServletResponse, Model model) {
 		User user=new User();
 		user.setPassword("test");
-		user.setUsername("test");
+		user.setUsername("username");
+		user.setEmail("userEmail");
 		userRepository.save(user);
 		
 		
@@ -38,4 +40,22 @@ public class LoginController {
 		
 		return "page/manu";
 	}
+	
+	@RequestMapping(value = "/jpa", method = RequestMethod.GET, produces = "text/html; charset=utf-8")
+	@ResponseBody
+	public String jpa(
+			HttpServletRequest httpServletRequest,
+			HttpServletResponse httpServletResponse, Model model) {
+		User user=new User();
+		user=userRepository.findByUsername("username");
+		System.out.println(user.getUsername());
+		
+		user=userRepository.findByEmail("userEmail");
+		System.out.println(user.getEmail());
+		
+		
+		return "page/manu";
+	}
+	
+	
 }
